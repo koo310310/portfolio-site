@@ -1,0 +1,322 @@
+html {
+  font-size: 32px;
+}
+
+body {
+  font-family: Arial, serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #666;
+  background: #fff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: .8rem;
+  font-size: .6rem;
+  border-bottom: 1px solid #666;
+}
+
+dt {
+  float: left;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.cover-image {
+  background-color: transparent;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.title-container {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  background: rgba(231,147,21, 0.7);
+}
+
+.profile-image {
+  background-size: cover !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.social-icons li a {
+  display: inline-block;
+  color: #30BFBA;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.display-table {
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+
+.display-table-contents {
+  padding: 128px 15%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.display-table-contents dl {
+  text-align: left;
+}
+
+.title-text {
+  color: white;
+  position: relative;
+}
+
+.profile-text {
+  color: white;
+  font-size: .8rem;
+}
+
+.icon-link {
+  position: relative;
+}
+
+header svg {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Skills */
+#skills {
+  padding: 4rem 0;
+  clear: both;
+}
+
+.heading {
+ margin-bottom: 1rem;
+ text-align: center;
+}
+
+.skills-container,
+.works-container {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ text-align: center;
+}
+
+.skill,
+.work {
+  width: calc((1200px - 60px) / 3);
+  box-sizing: border-box;
+  padding: .3rem 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #666;
+  color: #666;
+}
+
+.work {
+  font-family: Arial, serif;
+  text-decoration: none;
+}
+
+.skill > svg {
+  font-size: 2.5rem;
+}
+
+.skill-desc {
+  font-size: .6rem;
+}
+
+.skill-rate {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-rate li {
+  height: .6rem;
+  line-height: .6rem;
+}
+
+.skill-rate svg {
+  font-size: .5rem;
+}
+
+/* Works */
+#works {
+  padding: 0 0 4rem;
+}
+
+figure {
+  margin: 0;
+}
+
+.work figure img {
+  width: 100%;
+}
+
+.work-desc {
+  font-size: .6rem;
+}
+
+.work-skills {
+  display: flex;
+  font-size: 0.5rem;
+  margin-bottom: 0;
+}
+
+.work-skills li {
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #666;
+  color: #fff;
+}
+
+/* Contact */
+#contact {
+  padding: 128px 0;
+  clear: both;
+}
+
+.contact {
+ background: rgba(231,147,21, 0.7);
+}
+
+.contact-contents {
+ color: white;
+ text-align: center;
+}
+
+.form-label {
+  display: block;
+}
+
+.form-label:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.form-label input,
+.form-label textarea {
+  width: 80%;
+  margin: auto;
+  font-size: .7rem;
+  display: block;
+  padding: 10px;
+}
+
+.form-label textarea {
+  resize: none;
+  height: calc( .7rem * 5 );
+  line-height: .7rem;
+}
+
+.description {
+ font-size: .5rem;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.btn {
+ font-family: "Space Mono", Arial, serif;
+ font-size: .7rem;
+ border: none !important;
+ border-radius: 30px;
+ padding: 16px 64px;
+ text-decoration: none;
+ transition: all .4s;
+}
+
+.btn:hover {
+  opacity: .6;
+}
+
+#contact .btn {
+ height: 54px;
+ background: #fff;
+ color: rgba(231,147,21, 0.7);
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
+
+  .title-container {
+    width: 100%;
+    background: rgba(231,147,21, 0.4);
+  }
+
+  .profile-image {
+    display: none;
+  }
+
+  .skill,
+  .work {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    margin-bottom: 100px;
+  }
+  
+  html {
+    font-size: 25px;
+  }
+}
