@@ -23,7 +23,7 @@ export const Works = () => {
     {
       name: "Portfolio",
       sumb: Portfolio,
-      link: "https://koo310310.github.io/portfolio/",
+      link: "https://koo310310.github.io/portfolio-site/",
       type: "個人サイト",
       desc: "ポートフォリオサイト。Reactのアウトプットの練習として制作しました。",
       skill: ["React","XD"]
